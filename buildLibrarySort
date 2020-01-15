@@ -1,0 +1,3 @@
+gcc -c -Wall Shapes.c
+ar -cru libShapes.a Shapes.o
+gcc -o testLib ShapesTest.c -l. -lShapes -lm
